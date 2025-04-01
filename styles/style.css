@@ -21,10 +21,17 @@ h2 {
   font-size: 32px;
 }
 
-h3 {
+h3,
+footer {
   font-size: 16px;
 }
 
+div,
+blockquote,
+q {
+  font-size: 16px;
+  color: rgb(127, 127, 127);
+}
 p,
 li,
 a,
