@@ -2,7 +2,9 @@ html {
   font-size: 10px;
   font-family: "Noto Serif", "Noto Sans", "ZCOOL QingKe HuangYou", sans-serif;
 }
-
+nav {
+  background-image: url("../images/0403a.png");
+}
 h1,
 h2,
 h3 {
@@ -63,6 +65,11 @@ body {
 
 img {
   width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+figure {
+  scale: 0.8;
   display: block;
   margin: 0 auto;
 }
