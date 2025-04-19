@@ -1,10 +1,10 @@
 html {
   font-size: 10px;
-  font-family: "Noto Serif", "Noto Sans", "ZCOOL QingKe HuangYou", sans-serif;
+  font-family: "Noto Serif", "Noto Sans", sans-serif;
 }
-nav {
+/*nav {
   background-image: url("../images/0403a.png");
-}
+} 暂且先不要*/
 h1,
 h2,
 h3 {
@@ -20,15 +20,22 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
+  color: #000000;
 }
-
+h2::after,
+h2::before {
+  content: "↓";
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
 h3,
 footer {
   font-size: 16px;
 }
 
-div,
 blockquote,
 q {
   font-size: 16px;
@@ -72,4 +79,57 @@ figure {
   scale: 0.8;
   display: block;
   margin: 0 auto;
+}
+time {
+  color: #7e7100;
+}
+span.attention {
+  color: red;
+  font-weight: bold;
+}
+span.marker {
+  color: black;
+  font-weight: bolder;
+  background-color: yellow;
+  transition: color 0.3s ease;
+}
+span.marker:hover {
+  color: blue;
+}
+span.addition {
+  color: gray;
+  font-size: small;
+  transition: font-size 0.3s ease;
+}
+span.addition:hover {
+  font-size: medium;
+}
+span.strike {
+  text-decoration: line-through;
+}
+span[title] {
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+span[title]:hover {
+  background-color: gainsboro;
+}
+article div {
+  color: rgb(30, 0, 255);
+  text-decoration: underline;
+  font-size: large;
+}
+article p:nth-last-child(2n)::first-line {
+  text-decoration: dotted underline;
+}
+article a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: all 0.3s ease;
+}
+a {
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: red;
+  font-size: larger;
 }

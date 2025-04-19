@@ -2,10 +2,10 @@ const myImage = document.querySelector("img");
 
 myImage.onclick = () => {
   const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/xiaowan.png") {
+  if (mySrc === "images/名片1_名片正.png") {
     myImage.setAttribute("src", "images/xiaowan1.png");
   } else {
-    myImage.setAttribute("src", "images/xiaowan.png");
+    myImage.setAttribute("src", "images/名片1_名片正.png");
   }
 };
 let myButton = document.querySelector("button");
