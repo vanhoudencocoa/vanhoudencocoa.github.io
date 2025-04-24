@@ -107,6 +107,14 @@ span.addition:hover {
 span.strike {
   text-decoration: line-through;
 }
+span.hide {
+  background-color: #000000;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+span.hide:hover {
+  color: #ffffff;
+}
 span[title] {
   background-color: rgb(255, 255, 255);
   transition: all 0.3s ease;
