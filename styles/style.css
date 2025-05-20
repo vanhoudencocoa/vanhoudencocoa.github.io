@@ -45,6 +45,7 @@ article,
 nav,
 button {
   font-size: 25px;
+
   line-height: 2;
   letter-spacing: 1px;
   background-color: #ffffff;
@@ -132,12 +133,17 @@ article p:nth-last-child(2n)::first-line {
 }
 article a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #ffffff;
   transition: all 0.3s ease;
 }
-a {
+article a:hover {
+  color: white;
+  background-color: blue;
+}
+nav a {
   transition: all 0.3s ease;
 }
-a:hover {
+nav a:hover {
   color: red;
   font-size: larger;
 }
@@ -151,5 +157,5 @@ figure img {
 }
 figure img:hover {
   transform: scale(1.1);
-  box-shadow: 0px 0px 12px #000000;
+  box-shadow: 0px 0px 30px #3e3e3e;
 }
