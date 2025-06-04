@@ -92,10 +92,11 @@ span.marker {
   color: black;
   font-weight: bolder;
   background-color: yellow;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 span.marker:hover {
   color: blue;
+  font-size: larger;
 }
 span.addition {
   color: gray;
