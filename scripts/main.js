@@ -8,7 +8,7 @@ myImage.onclick = () => {
     myImage.setAttribute("src", "images/名片1_名片正.png");
   }
 };
-let myButton = document.querySelector("button");
+/*let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 function setUserName() {
   const myName = prompt("Please enter your name.");
@@ -28,4 +28,4 @@ if (!localStorage.getItem("name")) {
 }
 myButton.onclick = () => {
   setUserName();
-};
+};*/

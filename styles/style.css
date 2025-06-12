@@ -2,6 +2,17 @@ html {
   font-size: 10px;
   font-family: "Noto Serif", "Noto Sans", sans-serif;
 }
+
+/*html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}*/
+
 /*nav {
   background-image: url("../images/0403a.png");
 } 暂且先不要*/
@@ -12,11 +23,13 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
-  margin: 0;
+  box-sizing: border-box;
+  font-size: 100px;
+  margin: 10;
   padding: 20px 0;
   color: #000000;
-  text-decoration: underline;
+  border: 3px solid black;
+  background-color: #ffffff;
 }
 
 h2 {
@@ -27,13 +40,17 @@ h2::after,
 h2::before {
   content: "↓";
 }
-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
 h3,
 footer {
   font-size: 16px;
+}
+.introimg {
+  padding-bottom: 5px;
+  align-items: center;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
 }
 
 blockquote,
@@ -136,10 +153,12 @@ article a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #ffffff;
   transition: all 0.3s ease;
+  display: inline-block;
 }
 article a:hover {
   color: white;
   background-color: blue;
+  padding: 0 1em;
 }
 nav a {
   transition: all 0.3s ease;
