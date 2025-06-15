@@ -1,0 +1,34 @@
+html {
+  font-size: 16px;
+  background-color: #0100f0;
+}
+h1 {
+  font-weight: bolder;
+  font-size: 128px;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: red;
+
+  transition: all ease 0.3s;
+}
+h1:hover {
+  font-size: 150px;
+  color: yellow;
+}
+img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  transition: all ease 1s;
+}
+.dancing {
+  background-image: url("../images/dancing.gif");
+  background-repeat: round;
+  background-size: 10%;
+  background-position: top left;
+  padding-bottom: 109em;
+}
+img:hover {
+  opacity: 0;
+}
