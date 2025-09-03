@@ -44,10 +44,28 @@ h3,
 footer {
   font-size: 16px;
 }
+
 .introimg {
   padding-bottom: 5px;
   align-items: center;
 }
+.business_card:hover {
+  animation-name: rotation_360deg;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease;
+}
+@keyframes rotation_360deg {
+  0% {
+  }
+  50% {
+    transform: scale(1.2) rotate3d(0, 1, 0, 1turn);
+    box-shadow: 0px 3px 15px #3e3e3e;
+  }
+  100% {
+  }
+}
+
 nav ul {
   list-style-type: none;
   text-align: center;
@@ -93,11 +111,7 @@ img {
   display: block;
   margin: 0 auto;
 }
-figure {
-  scale: 0.8;
-  display: block;
-  margin: 0 auto;
-}
+
 time {
   color: #7e7100;
 }
@@ -172,6 +186,12 @@ nav a:hover {
   color: red;
   font-size: larger;
 }
+
+figure {
+  scale: 0.8;
+  display: block;
+  margin: 0 auto;
+}
 figure {
   border-bottom: 3px solid black;
   border-top: 3px solid black;
@@ -182,7 +202,7 @@ figure img {
 }
 figure img:hover {
   transform: scale(1.1);
-  box-shadow: 0px 0px 30px #3e3e3e;
+  box-shadow: 0px 3px 15px #3e3e3e;
 }
 
 h1:hover {
