@@ -1,13 +1,21 @@
-const myImage = document.querySelector("img");
+const img = document.getElementById("hoverImage");
+//const img = document.getElementsByClassName("hanging");
+const originalSrc = "images/0905a.png";
+const hoverSrc = "images/0905b.png";
 
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/名片1_名片正.png") {
-    myImage.setAttribute("src", "images/xiaowan1.png");
-  } else {
-    myImage.setAttribute("src", "images/名片1_名片正.png");
-  }
-};
+img.addEventListener("mouseenter", () => {
+  img.src = hoverSrc;
+});
+
+img.addEventListener("mouseleave", () => {
+  img.src = originalSrc;
+});
+
+img.addEventListener("click", () => {
+  img.classList.remove("zoom-animation");
+  void img.offsetWidth;
+  img.classList.add("zoom-animation");
+});
 /*let myButton = document.querySelector("button");
 let myHeading = document.querySelector("h1");
 function setUserName() {
