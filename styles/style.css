@@ -46,16 +46,21 @@ footer {
 }
 
 .introimg {
-  padding-bottom: 5px;
+  margin-bottom: 5px;
   align-items: center;
+  transition: all 0.3s ease;
 }
-.business_card:hover {
+.introimg:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 3px 30px gray;
+}
+/*.business_card:hover {
   animation-name: rotation_360deg;
   animation-duration: 3s;
   animation-delay: 0.5s;
   animation-timing-function: ease;
-}
-@keyframes rotation_360deg {
+}*/
+/*@keyframes rotation_360deg {
   0% {
   }
   50% {
@@ -64,7 +69,7 @@ footer {
   }
   100% {
   }
-}
+}*/
 
 nav ul {
   list-style-type: none;
