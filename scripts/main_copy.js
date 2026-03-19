@@ -1,6 +1,6 @@
 const img = document.getElementById("hoverImage");
-const originalSrc = "images/0905a.png";
-const hoverSrc = "images/0905b.png";
+const originalSrc = "../images/snaur1.png";
+const hoverSrc = "../images/snaur2.png";
 
 img.addEventListener("mouseenter", () => {
   img.src = hoverSrc;
@@ -8,12 +8,6 @@ img.addEventListener("mouseenter", () => {
 
 img.addEventListener("mouseleave", () => {
   img.src = originalSrc;
-});
-
-img.addEventListener("click", () => {
-  img.classList.remove("zoom-animation");
-  void img.offsetWidth;
-  img.classList.add("zoom-animation");
 });
 
 /*let myButton = document.querySelector("button");
